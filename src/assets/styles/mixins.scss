@@ -32,3 +32,12 @@ $min-width-desktop: 1024px;
     -1px 1px 0 #f40a0a,
     1px 1px 0 #f40a0a;
 }
+
+@mixin default-container {
+  margin: 0 auto;
+  width: 80%;
+
+  @include responsive(mobile) {
+    width: 95%;
+  }
+}
